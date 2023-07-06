@@ -2,4 +2,4 @@
 
 ## Simple Tetris Game
 
-Powered by fdstypical<ashulmin14@gamail.com>
+Powered by fdstypical <ashulmin14@gamail.com>
