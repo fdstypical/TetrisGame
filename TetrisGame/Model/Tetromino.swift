@@ -39,179 +39,179 @@ struct Tetromino {
     }
     
     static func getAllBlocks(type: BlockType) -> [[BlockLocation]] {
-            switch type {
-            case .I:
-                return [
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 0, column: 2)
-                        ],
-                        [
-                            BlockLocation(row: -1, column: 1),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 1, column: 1),
-                            BlockLocation(row: -2, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: -1, column: -1),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: -1, column: 1),
-                            BlockLocation(row: -1, column: 2)
-                        ],
-                        [
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: -2, column: 0)
-                        ]
+        switch type {
+        case .I:
+            return [
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 0, column: 2)
+                ],
+                [
+                    BlockLocation(row: -1, column: 1),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 1, column: 1),
+                    BlockLocation(row: -2, column: 1)
+                ],
+                [
+                    BlockLocation(row: -1, column: -1),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: -1, column: 1),
+                    BlockLocation(row: -1, column: 2)
+                ],
+                [
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: -2, column: 0)
                 ]
-            case .O:
-                return [
-                        [
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 1, column: 1),
-                            BlockLocation(row: 1, column: 0)
-                        ]
+            ]
+        case .O:
+            return [
+                [
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 1, column: 1),
+                    BlockLocation(row: 1, column: 0)
                 ]
-            case .T:
-                return [
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 1, column: 0)
-                        ],
-                        [
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 1, column: 0)
-                        ],
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: -1, column: 0)
-                        ],
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: -1, column: 0)
-                        ]
+            ]
+        case .T:
+            return [
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 1, column: 0)
+                ],
+                [
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 1, column: 0)
+                ],
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: -1, column: 0)
+                ],
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: -1, column: 0)
                 ]
-            case .J:
-                return [
-                        [
-                            BlockLocation(row: 1, column: -1),
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1)],
-                        [
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: 1, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: -1, column: 1),
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: -1, column: -1)
-                        ]
+            ]
+        case .J:
+            return [
+                [
+                    BlockLocation(row: 1, column: -1),
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1)],
+                [
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: 1, column: 1)
+                ],
+                [
+                    BlockLocation(row: -1, column: 1),
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1)
+                ],
+                [
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: -1, column: -1)
                 ]
-            case .L:
-                return [
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 1, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: -1, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: -1, column: -1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: 1, column: -1)
-                        ]
+            ]
+        case .L:
+            return [
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 1, column: 1)
+                ],
+                [
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: -1, column: 1)
+                ],
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: -1, column: -1)
+                ],
+                [
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: 1, column: -1)
                 ]
-            case .S:
-                return [
-                        [
-                            BlockLocation(row: 0, column: -1),
-                             BlockLocation(row: 0, column: 0),
-                             BlockLocation(row: 1, column: 0),
-                             BlockLocation(row: 1, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: -1, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: -1, column: -1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: -1),
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0)
-                        ]
+            ]
+        case .S:
+            return [
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 1, column: 1)
+                ],
+                [
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: -1, column: 1)
+                ],
+                [
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: -1, column: -1)
+                ],
+                [
+                    BlockLocation(row: 1, column: -1),
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0)
                 ]
-            case .Z:
-                return [
-                        [
-                            BlockLocation(row: 1, column: -1),
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: 1),
-                            BlockLocation(row: 0, column: 1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0)
-                        ],
-                        [
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: -1, column: 0),
-                            BlockLocation(row: -1, column: 1)
-                        ],
-                        [
-                            BlockLocation(row: 1, column: 0),
-                            BlockLocation(row: 0, column: 0),
-                            BlockLocation(row: 0, column: -1),
-                            BlockLocation(row: -1, column: -1)
-                        ]
+            ]
+        case .Z:
+            return [
+                [
+                    BlockLocation(row: 1, column: -1),
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: 1)
+                ],
+                [
+                    BlockLocation(row: 1, column: 1),
+                    BlockLocation(row: 0, column: 1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0)
+                ],
+                [
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: -1, column: 0),
+                    BlockLocation(row: -1, column: 1)
+                ],
+                [
+                    BlockLocation(row: 1, column: 0),
+                    BlockLocation(row: 0, column: 0),
+                    BlockLocation(row: 0, column: -1),
+                    BlockLocation(row: -1, column: -1)
                 ]
-            }
+            ]
         }
+    }
     
     static func createTetromino(rows: Int, columns: Int) -> Tetromino {
         let type = BlockType.allCases.randomElement()!
